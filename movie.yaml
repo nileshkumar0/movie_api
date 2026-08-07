@@ -545,7 +545,6 @@ paths:
             summary: Authenticate user
             description: Authenticates a registered customer using email and password. On successful authentication the API returns an access token, refresh token, token expiration time, and user information.
             operationId: loginUser
-            deprecated: true
             security: []
             parameters:
                 - name: X-Client-Id
