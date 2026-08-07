@@ -605,9 +605,9 @@ paths:
                 '423':
                     description: User account is locked.
                     content:
-                    application/json:
-                        schema:
-                            $ref: '#/components/schemas/ErrorResponse'
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/ErrorResponse'
                 '500':
                     $ref: '#/components/responses/InternalServerError'
 
@@ -649,13 +649,13 @@ paths:
                     headers:
                         X-Access-Token-Expires:
                             description: Token expiry time in seconds.
-                                schema:
-                                    type: integer
-                                    example: 3600
-                                    content:
-                                        application/json:
-                                            schema:
-                                                $ref: '#/components/schemas/LoginResponse'
+                            schema:
+                                type: integer
+                                example: 3600
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/LoginResponse'
 
                 '400':
                     $ref: '#/components/responses/BadRequest'
